@@ -1,0 +1,61 @@
+# OS / Office temporary files
+~$*
+*.tmp
+*.temp
+*.bak
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Python / tool caches
+**/__pycache__/
+**/.cache/
+*.py[cod]
+
+# Build and dependency outputs
+build/
+install/
+log/
+node_modules/
+
+# Editor swap/private settings
+*.swp
+*.swo
+.idea/
+.vscode/*.local.*
+
+# Credentials and private keys
+.env
+.env.*
+*.key
+*.pem
+*.ppk
+id_rsa
+id_ed25519
+
+# Robot recordings / datasets
+*.bag
+*.db3
+*.mcap
+
+# Executables and bundled tools
+*.exe
+*.dll
+*.msi
+*.7z
+*.rar
+
+# Current local directories that must not enter the first public upload
+隐私/
+DG-202611比赛材料文档/PLAN_REVIEW_v0.2/_qa_*/
+DG-202611_FORMAL_SUBMISSION_REBUILD/99_HISTORY_NOT_FOR_SUBMISSION/
+
+# Large video: use Git LFS or distribute separately after review
+演示视频.mp4
+
+# Staging-specific exclusions
+FORMAL_SUBMISSION_REBUILD/99_HISTORY_NOT_FOR_SUBMISSION/
+FORMAL_SUBMISSION_REBUILD/DSH_ROUND1/
+HISTORY/UNVERIFIED_*/
+*.mp4
+*.zip
