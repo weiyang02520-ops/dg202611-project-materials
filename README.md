@@ -1,34 +1,37 @@
-# DG-202611 基于具身智能的无人平台多源导航定位技术
+# Project: DG-202611
 
-This repository contains internal project materials used to prepare the competition submission.
+## 基于具身智能的无人平台多源导航定位技术
 
-Current formal rebuild:
-`FORMAL_SUBMISSION_REBUILD/`
+**Repository Role: Internal Project Materials Repository**
 
-Historical materials:
-`HISTORY/`
+**This repository is NOT the final competition submission package.**
 
-External audits:
-`EXTERNAL_AUDIT/`
+`FORMAL_CURRENT_ROOT: FORMAL_SUBMISSION_REBUILD/`
 
-Robot development repository:
-`liaojingwu20041031/electric-power-inspection-robot`
+本仓库保存可公开、可审计、对项目连续性有长期价值的正式方案重建材料、证据索引、关键治理 Gate 与自有设计图。原始材料目录不会整体镜像；隐私、第三方版权资料、大型二进制、视频、压缩包、构建产物及重复历史版本均保留在本地，不进入公开仓库。
 
-Literature evidence repository:
-`weiyang02520-ops/dg202611-literature-evidence`
+## Current canonical
 
-NOTE:
-This repository is not itself the final competition submission package.
+- 正式工作稿：[`FORMAL_SUBMISSION_REBUILD/FULL_ASSEMBLY_STAGE_C/00_FORMAL_SUBMISSION_INTEGRATED_DRAFT_v0.3.1.md`](FORMAL_SUBMISSION_REBUILD/FULL_ASSEMBLY_STAGE_C/00_FORMAL_SUBMISSION_INTEGRATED_DRAFT_v0.3.1.md)
+- 当前参考文献：[`02_FINAL_REFERENCE_LIST_v0.2.md`](FORMAL_SUBMISSION_REBUILD/FULL_ASSEMBLY_STAGE_C/02_FINAL_REFERENCE_LIST_v0.2.md)
+- 视觉总装准备：[`FORMAL_SUBMISSION_REBUILD/VISUAL_ASSEMBLY_PREP/`](FORMAL_SUBMISSION_REBUILD/VISUAL_ASSEMBLY_PREP/)
+- 七幅正式设计图：[`FORMAL_SUBMISSION_REBUILD/FORMAL_FIGURES_P1/`](FORMAL_SUBMISSION_REBUILD/FORMAL_FIGURES_P1/)
+- 当前状态说明：[`FORMAL_SUBMISSION_REBUILD/CURRENT_STATUS.md`](FORMAL_SUBMISSION_REBUILD/CURRENT_STATUS.md)
 
-The source material directory is intentionally not mirrored wholesale. Personal data, large binaries,
-unfinished audits, duplicate versions, third-party images, and historical QA renderings are excluded.
+当前文本与引用体系已冻结于本阶段；实验结果、工程事实图7-2、最终 Word/PDF 与最终提交包尚未完成。所有性能指标仍是正式验证目标，不是当前实测结论。
 
-## Current status
+## Repository map
 
-- DSH Round 1: `MASTER_REVIEWED_PASS`
-- Current working drafts: abstract v0.2 and Chapter 1 v0.2
-- Draft stage: `FROZEN_FOR_CURRENT_DRAFT_STAGE` (not final-submission freeze)
-- Package A Round 2 audit: `COMPLETE`
-- Package A freeze verdict: `PASS_WITH_REQUIRED_BOOKKEEPING_FIXES`
-- Package A competition-metric evidence: `NO`
+- [`MATERIALS_INDEX.md`](MATERIALS_INDEX.md)：current、audits、governance、figures、history 与 local-only 导航。
+- [`REPOSITORY_STATUS.md`](REPOSITORY_STATUS.md)：当前冻结状态和开放缺口。
+- [`LOCAL_EXCLUDED_FILES.md`](LOCAL_EXCLUDED_FILES.md)：未镜像材料的类别与原因，不记录敏感内容。
+- [`OFFICIAL/`](OFFICIAL/)：已纳入的官方公开比赛材料。
+- [`EXTERNAL_AUDIT/`](EXTERNAL_AUDIT/)：独立审计、冻结判定与 open issues。
+- [`PROJECT_GOVERNANCE/`](PROJECT_GOVERNANCE/)：总章程及关键 Gate。
+- [`HISTORY/`](HISTORY/)：明确标注为 historical/superseded 的版本定位。
+
+## Related repositories
+
+- Robot development: https://github.com/weiyang02520-ops/electric-power-inspection-robot
+- Literature evidence: https://github.com/weiyang02520-ops/dg202611-literature-evidence
 

@@ -31,7 +31,7 @@ SYNTHETIC_PRECHECK:
 /home/weiyang/dg202611_ws/results/synthetic/precheck/   [ACCESS_STATUS = UNAVAILABLE]
 
 MAIN_GITHUB:
-https://github.com/liaojingwu20041031/electric-power-inspection-robot
+https://github.com/weiyang02520-ops/electric-power-inspection-robot
 （remote main HEAD = e83d308615e7d8de09aa10d2adb4b88eefe2e759, 2026-07-22；指定基线 c41adca7f9bddb4240a1a4855437518b36d9fe13 存在但为悬空提交）
 
 LITERATURE_GITHUB:

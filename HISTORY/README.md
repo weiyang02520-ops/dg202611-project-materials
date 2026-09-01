@@ -1,11 +1,11 @@
 # Historical material positioning
 
-Historical drafts are intentionally not copied into the first public staging package. They remain preserved in the original material directory.
+Historical Word builds, preview exports and superseded Stage C versions are intentionally excluded from this curated repository. They remain in the protected local source collection and are not required to understand the current project state.
 
-| MATERIAL | ORIGINAL_FILENAME | SHA256 | STAGING_DECISION |
-|---|---|---|---|
-| v0.2 review build | DG-202611_方案书整体构造审阅版_v0.2.docx | `04cd6aa04b43244b0f9ad14bba3af3df4d8bb47799f8f3efc5e6cdfef47a7d16` | EXCLUDED; historical review artifact |
-| vCurrent Markdown | DG-202611_方案书当前整稿预览_vCurrent.md | `561a2994341aaded2e87a1abe16c6040bce234518980f5b1b0f99e7984dd10e4` | EXCLUDED; superseded working assembly |
-| vCurrent Word | DG-202611_方案书当前整稿预览_vCurrent.docx | `5722f4223a2d2d04872c2e91be05c3fe07efc2e1f950f4694af0457cfe38ac15` | EXCLUDED; superseded working assembly |
+The retained Round 1 Markdown drafts under `FORMAL_SUBMISSION_REBUILD/05_DSH_OUTPUT/ROUND1/` are audit history only. The current integrated text is:
 
-The current rebuild blueprint and pending Round 1 draft are under `FORMAL_SUBMISSION_REBUILD/`.
+`FORMAL_SUBMISSION_REBUILD/FULL_ASSEMBLY_STAGE_C/00_FORMAL_SUBMISSION_INTEGRATED_DRAFT_v0.3.1.md`
+
+The current reference list is:
+
+`FORMAL_SUBMISSION_REBUILD/FULL_ASSEMBLY_STAGE_C/02_FINAL_REFERENCE_LIST_v0.2.md`

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="90mm" viewBox="0 0 1600 900">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#2F5597"/></marker>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC","SimHei",sans-serif;fill:#1F2937}.title{font-size:40px;font-weight:700;fill:#17365D}.section{font-size:30px;font-weight:700;fill:#17365D}.label{font-size:30px;font-weight:700}.body{font-size:30px}.small{font-size:29px}.card{fill:#fff;stroke:#98A2B3;stroke-width:2}.problem{fill:#F3F6FA;stroke:#667085;stroke-width:2}.model{fill:#E9F2FF;stroke:#2F5597;stroke-width:3}.integration{fill:#FFF0D9;stroke:#C46A00;stroke-width:3}.metric{fill:#E7F5F3;stroke:#0F6B6D;stroke-width:2}.arrow{fill:none;stroke:#2F5597;stroke-width:4;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#FFFFFF"/>
+  <text x="800" y="62" text-anchor="middle" class="title">图3-1  四项赛题问题—三核心模型—样机—正式指标总体技术路线</text>
+  <rect x="55" y="92" width="410" height="52" rx="12" fill="#E9EEF3"/><text x="260" y="128" text-anchor="middle" class="section">赛题问题与工程任务</text>
+  <rect x="575" y="92" width="450" height="52" rx="12" fill="#DCE9F8"/><text x="800" y="128" text-anchor="middle" class="section">三模型与样机集成</text>
+  <rect x="1135" y="92" width="410" height="52" rx="12" fill="#DFF3F2"/><text x="1340" y="128" text-anchor="middle" class="section">正式评价目标</text>
+
+  <g>
+    <rect x="55" y="178" width="410" height="122" rx="18" class="problem"/>
+    <circle cx="93" cy="217" r="20" fill="#2F5597"/><text x="93" y="228" text-anchor="middle" font-size="29" font-weight="700" fill="#fff">1</text>
+    <text x="130" y="218" class="label">BDS短时中断</text><text x="130" y="260" class="body">+ LiDAR几何退化</text>
+    <rect x="55" y="330" width="410" height="122" rx="18" class="problem"/>
+    <circle cx="93" cy="369" r="20" fill="#2F5597"/><text x="93" y="380" text-anchor="middle" font-size="29" font-weight="700" fill="#fff">2</text>
+    <text x="130" y="371" class="label">动态 / 异常 LiDAR</text><text x="130" y="413" class="body">干扰与可见性变化</text>
+    <rect x="55" y="482" width="410" height="122" rx="18" class="problem"/>
+    <circle cx="93" cy="521" r="20" fill="#2F5597"/><text x="93" y="532" text-anchor="middle" font-size="29" font-weight="700" fill="#fff">3</text>
+    <text x="130" y="523" class="label">剧烈运动 / 跨域</text><text x="130" y="565" class="body">/ 感知退化</text>
+    <rect x="55" y="634" width="410" height="122" rx="18" class="problem"/>
+    <circle cx="93" cy="673" r="20" fill="#C46A00"/><text x="93" y="684" text-anchor="middle" font-size="29" font-weight="700" fill="#fff">4</text>
+    <text x="130" y="675" class="label">样机系统集成</text><text x="130" y="717" class="body">+ 北斗短报文</text>
+  </g>
+
+  <g>
+    <rect x="575" y="178" width="450" height="122" rx="18" class="model"/>
+    <text x="610" y="224" class="label">模型1</text><text x="610" y="266" class="body">质量感知多源连续定位</text>
+    <rect x="575" y="330" width="450" height="122" rx="18" class="model"/>
+    <text x="610" y="376" class="label">模型2</text><text x="610" y="418" class="body">动态 / 异常抑制与稳定特征</text>
+    <rect x="575" y="482" width="450" height="122" rx="18" class="model"/>
+    <text x="610" y="528" class="label">模型3</text><text x="610" y="570" class="body">具身主动重定位与安全交权</text>
+    <rect x="575" y="634" width="450" height="122" rx="18" class="integration"/>
+    <text x="610" y="680" class="label">样机 / 通信集成</text><text x="610" y="722" class="body">模型闭环 + 独立短报文链</text>
+  </g>
+
+  <g class="arrow"><path d="M465 239H568"/><path d="M465 391H568"/><path d="M465 543H568"/><path d="M465 695H568"/></g>
+  <g class="arrow"><path d="M1025 239H1128"/><path d="M1025 391H1128"/><path d="M1025 543H1128"/><path d="M1025 695H1128"/></g>
+
+  <rect x="1135" y="178" width="410" height="578" rx="20" fill="#F8FCFB" stroke="#0F6B6D" stroke-width="3"/>
+  <rect x="1170" y="200" width="340" height="70" rx="16" class="metric"/><text x="1340" y="246" text-anchor="middle" class="label">平面 &lt; 20 cm（目标）</text>
+  <rect x="1170" y="290" width="340" height="70" rx="16" class="metric"/><text x="1340" y="336" text-anchor="middle" class="label">高程 &lt; 20 cm（目标）</text>
+  <rect x="1170" y="380" width="340" height="90" rx="16" class="metric"/><text x="1340" y="417" text-anchor="middle" class="small" font-weight="700">repeatability ≥ 95%</text><text x="1340" y="454" text-anchor="middle" class="small">（目标）</text>
+  <rect x="1170" y="490" width="340" height="90" rx="16" class="metric"/><text x="1340" y="527" text-anchor="middle" class="small" font-weight="700">relocalization &gt; 95%</text><text x="1340" y="564" text-anchor="middle" class="small">（目标）</text>
+  <rect x="1170" y="600" width="340" height="118" rx="16" fill="#FFF0D9" stroke="#C46A00" stroke-width="2"/><text x="1340" y="647" text-anchor="middle" class="label">短报文样机集成</text><text x="1340" y="692" text-anchor="middle" class="body">验证（目标）</text>
+  <rect x="405" y="795" width="790" height="66" rx="18" fill="#FFF7E8" stroke="#C46A00" stroke-width="3" stroke-dasharray="12 8"/>
+  <text x="800" y="838" text-anchor="middle" class="label" fill="#9A4E00">以上均为方案目标 / 待正式实验验证，不代表当前实测结果</text>
+</svg>

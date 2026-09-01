@@ -37,6 +37,9 @@ id_ed25519
 *.bag
 *.db3
 *.mcap
+*.bag.active
+*.pcap
+*.sqlite3
 
 # Executables and bundled tools
 *.exe
@@ -44,6 +47,7 @@ id_ed25519
 *.msi
 *.7z
 *.rar
+*.pptx
 
 # Current local directories that must not enter the first public upload
 隐私/

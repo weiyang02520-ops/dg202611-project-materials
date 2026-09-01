@@ -1,13 +1,10 @@
-# Round 1 status
+# Round 1 status — HISTORICAL / SUPERSEDED
 
-DSH_ROUND1: `MASTER_REVIEWED_PASS`
+```text
+DSH_ROUND1_REVIEW_AT_THE_TIME: MASTER_REVIEWED_PASS
+CURRENT_STATUS: HISTORICAL
+SUPERSEDED_BY: ../../FULL_ASSEMBLY_STAGE_C/00_FORMAL_SUBMISSION_INTEGRATED_DRAFT_v0.3.1.md
+NOT_CURRENT: YES
+```
 
-CURRENT_WORKING_DRAFTS:
-- `01_ABSTRACT_DRAFT_v0.2.md`
-- `02_CHAPTER_1_DRAFT_v0.2.md`
-
-CURRENT_STAGE_STATUS: `FROZEN_FOR_CURRENT_DRAFT_STAGE`
-
-This is a MASTER-reviewed working-draft freeze, not the final competition-submission freeze and not `CANONICAL_FINAL_SUBMISSION_TEXT`.
-
-The superseded v0.1 pair remains only in the original material directory and is not included in this repository.
+本目录保留早期摘要与第1章工作稿用于审计项目演进。它们已被 Stage C v0.3.1 完整正文取代，不得作为当前方案正文或最终提交文本。

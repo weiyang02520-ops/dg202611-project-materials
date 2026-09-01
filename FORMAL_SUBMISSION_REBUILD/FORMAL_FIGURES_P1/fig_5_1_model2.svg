@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="90mm" viewBox="0 0 1600 900">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2F5597"/></marker>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC","SimHei",sans-serif;fill:#1F2937}.title{font-size:40px;font-weight:700;fill:#17365D}.head{font-size:31px;font-weight:700}.body{font-size:30px}.small{font-size:29px}.stage{fill:#F7FAFE;stroke:#2F5597;stroke-width:3}.step{fill:#fff;stroke:#667085;stroke-width:2}.stable{fill:#E7F5F3;stroke:#0F6B6D;stroke-width:3}.warn{fill:#FFF0D9;stroke:#C46A00;stroke-width:2}.flow{fill:none;stroke:#2F5597;stroke-width:4;marker-end:url(#a)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#fff"/><text x="800" y="58" text-anchor="middle" class="title">图5-1  模型2动态 / 异常抑制、稳定特征与正式评价流程</text>
+  <rect x="40" y="100" width="260" height="730" rx="22" fill="#FFF8ED" stroke="#C46A00" stroke-width="3"/>
+  <text x="170" y="148" text-anchor="middle" class="head" fill="#9A4E00">干扰与边界侧栏</text>
+  <g class="warn"><rect x="70" y="190" width="200" height="90" rx="15"/><rect x="70" y="310" width="200" height="110" rx="15"/><rect x="70" y="450" width="200" height="110" rx="15"/><rect x="70" y="590" width="200" height="90" rx="15"/></g>
+  <text x="170" y="245" text-anchor="middle" class="body">dynamic object</text><text x="170" y="340" text-anchor="middle" class="small">abnormal</text><text x="170" y="374" text-anchor="middle" class="small">reflection</text><text x="170" y="408" text-anchor="middle" class="small">/ outlier</text><text x="170" y="490" text-anchor="middle" class="small">occlusion /</text><text x="170" y="531" text-anchor="middle" class="small">new visibility</text><text x="170" y="625" text-anchor="middle" class="small">geometry</text><text x="170" y="662" text-anchor="middle" class="small">degeneration</text>
+  <text x="170" y="737" text-anchor="middle" class="small" fill="#667085">分类允许“未知”</text><text x="170" y="778" text-anchor="middle" class="small" fill="#667085">未知 ≠ 静态可信</text>
+
+  <rect x="340" y="100" width="370" height="610" rx="22" class="stage"/>
+  <rect x="365" y="120" width="320" height="52" rx="12" fill="#DCE9F8"/><text x="525" y="156" text-anchor="middle" class="head">A 候选生成</text>
+  <rect x="390" y="205" width="270" height="86" rx="15" class="step"/><text x="525" y="258" text-anchor="middle" class="body">raw 2D LiDAR</text>
+  <rect x="390" y="337" width="270" height="86" rx="15" class="step"/><text x="525" y="390" text-anchor="middle" class="body">preprocessing</text>
+  <rect x="375" y="469" width="300" height="150" rx="15" class="step"/><text x="525" y="512" text-anchor="middle" class="small">dynamic / occlusion</text><text x="525" y="552" text-anchor="middle" class="small">abnormal candidate</text><text x="525" y="596" text-anchor="middle" class="small">退化 / 未知标记</text>
+  <path d="M525 291V330" class="flow"/><path d="M525 423V462" class="flow"/>
+
+  <rect x="750" y="100" width="430" height="610" rx="22" fill="#F6FBFA" stroke="#0F6B6D" stroke-width="3"/>
+  <rect x="775" y="120" width="380" height="52" rx="12" fill="#DFF3F2"/><text x="965" y="156" text-anchor="middle" class="head">B 鲁棒筛选与稳定化</text>
+  <rect x="805" y="205" width="320" height="86" rx="15" class="stable"/><text x="965" y="258" text-anchor="middle" class="body">robust filtering</text>
+  <rect x="805" y="337" width="320" height="86" rx="15" class="stable"/><text x="965" y="390" text-anchor="middle" class="body">static candidate</text>
+  <rect x="805" y="469" width="320" height="86" rx="15" class="stable"/><text x="965" y="502" text-anchor="middle" class="small">temporal / geometric</text><text x="965" y="540" text-anchor="middle" class="small">stability</text>
+  <rect x="805" y="601" width="320" height="86" rx="15" class="stable"/><text x="965" y="654" text-anchor="middle" class="body" font-weight="700">stable feature</text>
+  <path d="M965 291V330" class="flow"/><path d="M965 423V462" class="flow"/><path d="M965 555V594" class="flow"/>
+
+  <rect x="1220" y="100" width="340" height="610" rx="22" class="stage"/>
+  <rect x="1245" y="120" width="290" height="52" rx="12" fill="#DCE9F8"/><text x="1390" y="156" text-anchor="middle" class="head">C 独立正式评价</text>
+  <rect x="1260" y="230" width="260" height="112" rx="15" class="step"/><text x="1390" y="278" text-anchor="middle" class="small">one-to-one</text><text x="1390" y="318" text-anchor="middle" class="small">matching</text>
+  <rect x="1260" y="390" width="260" height="180" rx="15" class="stable"/><text x="1390" y="430" text-anchor="middle" class="body">repeatability</text><text x="1390" y="472" text-anchor="middle" class="body">+ retention</text><text x="1390" y="515" text-anchor="middle" class="small">分场景</text><text x="1390" y="552" text-anchor="middle" class="small">有效覆盖率</text>
+  <path d="M1390 342V383" class="flow"/><path d="M1390 570V588" class="flow"/>
+  <rect x="1260" y="595" width="260" height="82" rx="15" fill="#FFF0D9" stroke="#C46A00" stroke-width="3" stroke-dasharray="10 7"/><text x="1390" y="627" text-anchor="middle" class="small" font-weight="700">正式指标待</text><text x="1390" y="664" text-anchor="middle" class="small" font-weight="700">EXP-03 验证</text>
+
+  <path d="M710 512H743" class="flow"/><path d="M1180 644H1213" class="flow"/>
+  <rect x="355" y="750" width="1190" height="80" rx="18" fill="#F5F7FA" stroke="#667085" stroke-width="2" stroke-dasharray="10 7"/>
+  <text x="950" y="801" text-anchor="middle" class="body">评价 matcher 与特征筛选相互独立；不以“删光特征”换取更高 repeatability</text>
+</svg>

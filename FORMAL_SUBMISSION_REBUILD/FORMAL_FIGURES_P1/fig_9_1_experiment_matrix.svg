@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="90mm" viewBox="0 0 1600 900">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2F5597"/></marker>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC","SimHei",sans-serif;fill:#1F2937}.title{font-size:40px;font-weight:700;fill:#17365D}.head{font-size:30px;font-weight:700}.body{font-size:29px}.small{font-size:29px}.h1{fill:#DCE9F8}.h2{fill:#DFF3F2}.h3{fill:#E9EEF3}.h4{fill:#FFF0D9}.cell{fill:#fff;stroke:#98A2B3;stroke-width:2}.exp{fill:#E9F2FF;stroke:#2F5597;stroke-width:2}.evidence{fill:#F6FBFA;stroke:#0F6B6D;stroke-width:2}.outcome{fill:#FFF8ED;stroke:#C46A00;stroke-width:2;stroke-dasharray:9 6}.flow{fill:none;stroke:#2F5597;stroke-width:3;marker-end:url(#a)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#fff"/><text x="800" y="56" text-anchor="middle" class="title">图9-1  EXP-01～05 正式实验矩阵与证据链</text>
+  <g>
+    <rect x="35" y="92" width="300" height="70" rx="12" class="h1"/><rect x="355" y="92" width="205" height="70" rx="12" class="h1"/><rect x="580" y="92" width="355" height="70" rx="12" class="h2"/><rect x="955" y="92" width="220" height="70" rx="12" class="h3"/><rect x="1195" y="92" width="370" height="70" rx="12" class="h4"/>
+    <text x="185" y="120" text-anchor="middle" class="small" font-weight="700">Official metric /</text><text x="185" y="153" text-anchor="middle" class="small" font-weight="700">requirement</text><text x="457" y="137" text-anchor="middle" class="head">正式实验</text><text x="757" y="137" text-anchor="middle" class="head">truth / raw data / logs</text><text x="1065" y="137" text-anchor="middle" class="head">evaluator</text><text x="1380" y="120" text-anchor="middle" class="small" font-weight="700">result figure / table</text><text x="1380" y="153" text-anchor="middle" class="small" font-weight="700">→ 判定</text>
+  </g>
+
+  <g>
+    <rect x="35" y="185" width="300" height="100" rx="14" class="cell"/><text x="185" y="225" text-anchor="middle" class="body">平面 / 高程</text><text x="185" y="266" text-anchor="middle" class="small">定位误差与连续性</text>
+    <rect x="355" y="185" width="205" height="100" rx="14" class="exp"/><text x="457" y="246" text-anchor="middle" class="head">EXP-01</text>
+    <rect x="580" y="185" width="355" height="100" rx="14" class="evidence"/><text x="757" y="225" text-anchor="middle" class="small">同步真值 + 估计轨迹</text><text x="757" y="266" text-anchor="middle" class="small">退化区间 + 有效性掩码</text>
+    <rect x="955" y="185" width="220" height="100" rx="14" class="cell"/><text x="1065" y="225" text-anchor="middle" class="small">误差 / 覆盖率</text><text x="1065" y="266" text-anchor="middle" class="small">复算与统计</text>
+    <rect x="1195" y="185" width="370" height="100" rx="14" class="outcome"/><text x="1380" y="218" text-anchor="middle" class="small">图9-2 + 表9-2</text><text x="1380" y="250" text-anchor="middle" class="small">PASS / FAIL /</text><text x="1380" y="280" text-anchor="middle" class="small">UNDETERMINED</text>
+
+    <rect x="35" y="305" width="300" height="100" rx="14" class="cell"/><text x="185" y="345" text-anchor="middle" class="body">工程部署 / TF</text><text x="185" y="386" text-anchor="middle" class="small">同步与参数一致性</text>
+    <rect x="355" y="305" width="205" height="100" rx="14" class="exp"/><text x="457" y="366" text-anchor="middle" class="head">EXP-02</text>
+    <rect x="580" y="305" width="355" height="100" rx="14" class="evidence"/><text x="757" y="345" text-anchor="middle" class="small">运行日志 + TF快照</text><text x="757" y="386" text-anchor="middle" class="small">版本 / 资源 / 时间记录</text>
+    <rect x="955" y="305" width="220" height="100" rx="14" class="cell"/><text x="1065" y="345" text-anchor="middle" class="small">一致性检查</text><text x="1065" y="386" text-anchor="middle" class="small">证据矩阵</text>
+    <rect x="1195" y="305" width="370" height="100" rx="14" class="outcome"/><text x="1380" y="338" text-anchor="middle" class="small">表9-1 + 工程证据</text><text x="1380" y="370" text-anchor="middle" class="small">PASS / FAIL /</text><text x="1380" y="400" text-anchor="middle" class="small">UNDETERMINED</text>
+
+    <rect x="35" y="425" width="300" height="100" rx="14" class="cell"/><text x="185" y="465" text-anchor="middle" class="body">repeatability</text><text x="185" y="506" text-anchor="middle" class="small">+ retention</text>
+    <rect x="355" y="425" width="205" height="100" rx="14" class="exp"/><text x="457" y="486" text-anchor="middle" class="head">EXP-03</text>
+    <rect x="580" y="425" width="355" height="100" rx="14" class="evidence"/><text x="757" y="465" text-anchor="middle" class="small">成对点云 + 场景标签</text><text x="757" y="506" text-anchor="middle" class="small">匹配 / 无效 / 零特征记录</text>
+    <rect x="955" y="425" width="220" height="100" rx="14" class="cell"/><text x="1065" y="465" text-anchor="middle" class="small">独立matcher</text><text x="1065" y="506" text-anchor="middle" class="small">分层统计</text>
+    <rect x="1195" y="425" width="370" height="100" rx="14" class="outcome"/><text x="1380" y="458" text-anchor="middle" class="small">图9-3 + 表9-2</text><text x="1380" y="490" text-anchor="middle" class="small">PASS / FAIL /</text><text x="1380" y="520" text-anchor="middle" class="small">UNDETERMINED</text>
+
+    <rect x="35" y="545" width="300" height="100" rx="14" class="cell"/><text x="185" y="585" text-anchor="middle" class="body">relocalization</text><text x="185" y="626" text-anchor="middle" class="small">成功率 / 恢复时间</text>
+    <rect x="355" y="545" width="205" height="100" rx="14" class="exp"/><text x="457" y="606" text-anchor="middle" class="head">EXP-04</text>
+    <rect x="580" y="545" width="355" height="100" rx="14" class="evidence"/><text x="757" y="585" text-anchor="middle" class="small">trial日志 + 场景标签</text><text x="757" y="626" text-anchor="middle" class="small">真值 + 候选 / 失败记录</text>
+    <rect x="955" y="545" width="220" height="100" rx="14" class="cell"/><text x="1065" y="585" text-anchor="middle" class="small">冻结判据</text><text x="1065" y="626" text-anchor="middle" class="small">CI / 时间统计</text>
+    <rect x="1195" y="545" width="370" height="100" rx="14" class="outcome"/><text x="1380" y="578" text-anchor="middle" class="small">图9-4 + 表9-2</text><text x="1380" y="610" text-anchor="middle" class="small">PASS / FAIL /</text><text x="1380" y="640" text-anchor="middle" class="small">UNDETERMINED</text>
+
+    <rect x="35" y="665" width="300" height="100" rx="14" class="cell"/><text x="185" y="705" text-anchor="middle" class="body">short-message</text><text x="185" y="746" text-anchor="middle" class="small">端到端样机集成</text>
+    <rect x="355" y="665" width="205" height="100" rx="14" class="exp"/><text x="457" y="726" text-anchor="middle" class="head">EXP-05</text>
+    <rect x="580" y="665" width="355" height="100" rx="14" class="evidence"/><text x="757" y="698" text-anchor="middle" class="small">发送 / 终端 / 远端日志</text><text x="757" y="729" text-anchor="middle" class="small">message ID + 时间戳</text><text x="757" y="760" text-anchor="middle" class="small">+ 远端回执</text>
+    <rect x="955" y="665" width="220" height="100" rx="14" class="cell"/><text x="1065" y="705" text-anchor="middle" class="small">送达 / 时延</text><text x="1065" y="746" text-anchor="middle" class="small">端到端关联</text>
+    <rect x="1195" y="665" width="370" height="100" rx="14" class="outcome"/><text x="1380" y="698" text-anchor="middle" class="small">图9-5 + 表9-2</text><text x="1380" y="730" text-anchor="middle" class="small">PASS / FAIL /</text><text x="1380" y="760" text-anchor="middle" class="small">UNDETERMINED</text>
+  </g>
+  <path d="M335 127H348" class="flow"/><path d="M560 127H573" class="flow"/><path d="M935 127H948" class="flow"/><path d="M1175 127H1188" class="flow"/>
+  <rect x="270" y="800" width="1060" height="72" rx="18" fill="#FFF0D9" stroke="#C46A00" stroke-width="3" stroke-dasharray="12 8"/>
+  <text x="800" y="846" text-anchor="middle" class="head" fill="#9A4E00">仅真实正式实验可填最终结果；目标值、示意值和模拟值不得进入结果栏</text>
+</svg>

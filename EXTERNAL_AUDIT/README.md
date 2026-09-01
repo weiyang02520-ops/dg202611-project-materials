@@ -1,13 +1,16 @@
 # External audit materials
 
-These files are internal independent audit records and are not the final competition submission text.
+这些文件是独立审计、冻结判定和 open issues 记录，不是正式比赛正文或项目性能结果。
 
-AUDIT_ROUND1: `COMPLETE` — completed Round 1 final report is included.
+```text
+AUDIT_ROUND1: COMPLETE
+PACKAGE_A_ROUND2_AUDIT: COMPLETE
+PACKAGE_A_FREEZE_VERDICT: PASS_WITH_REQUIRED_BOOKKEEPING_FIXES
+PACKAGE_A_COMPETITION_METRIC_EVIDENCE: NO
+```
 
-PACKAGE_A_ROUND2_AUDIT: `COMPLETE` — all eight final audit files are included.
+- `ROUND1_ZCODE/12_FINAL_INDEPENDENT_AUDIT_REPORT.md`：Round 1 最终独立审计报告。
+- `ROUND2_PACKAGE_A_CLAUDE/06_FREEZE_DECISION.md`：Package A 冻结判定。
+- `ROUND2_PACKAGE_A_CLAUDE/07_OPEN_ISSUES.md`：尚未关闭的问题。
 
-PACKAGE_A_FREEZE_VERDICT: `PASS_WITH_REQUIRED_BOOKKEEPING_FIXES`
-
-PACKAGE_A_COMPETITION_METRIC_EVIDENCE: `NO`
-
-The development-line bookkeeping fixes are not yet complete. Therefore this repository must not claim that Package A has completed its final freeze.
+审计通过或软件场景通过均不能替代 EXP-01～05 的正式比赛指标实验。

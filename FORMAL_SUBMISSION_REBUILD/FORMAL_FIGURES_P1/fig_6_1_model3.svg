@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="90mm" viewBox="0 0 1600 900">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2F5597"/></marker>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#A61B1B"/></marker>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC","SimHei",sans-serif;fill:#1F2937}.title{font-size:40px;font-weight:700;fill:#17365D}.stateText{font-size:29px;font-weight:700}.body{font-size:30px}.small{font-size:29px}.state{fill:#E9F2FF;stroke:#2F5597;stroke-width:3}.warn{fill:#FFF0D9;stroke:#C46A00;stroke-width:3}.good{fill:#E7F5F3;stroke:#0F6B6D;stroke-width:3}.bad{fill:#FCE8E6;stroke:#A61B1B;stroke-width:4}.flow{fill:none;stroke:#2F5597;stroke-width:4;marker-end:url(#ab)}.fail{fill:none;stroke:#A61B1B;stroke-width:4;stroke-dasharray:12 8;marker-end:url(#ar)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#fff"/><text x="800" y="58" text-anchor="middle" class="title">图6-1  模型3具身主动重定位与 SAFE_FAIL 状态机</text>
+
+  <rect x="55" y="120" width="240" height="100" rx="50" class="good"/><text x="175" y="181" text-anchor="middle" class="stateText">NORMAL</text>
+  <rect x="365" y="120" width="240" height="100" rx="28" class="warn"/><text x="485" y="181" text-anchor="middle" class="stateText">DEGRADED</text>
+  <rect x="675" y="120" width="280" height="100" rx="28" class="warn"/><text x="815" y="163" text-anchor="middle" class="stateText">RECOVERY_</text><text x="815" y="199" text-anchor="middle" class="stateText">REQUIRED</text>
+  <rect x="1025" y="120" width="240" height="100" rx="28" class="state"/><text x="1145" y="181" text-anchor="middle" class="stateText">ACTIVE_SEARCH</text>
+  <path d="M295 170H358" class="flow"/><path d="M605 170H668" class="flow"/><path d="M955 170H1018" class="flow"/>
+
+  <rect x="960" y="285" width="350" height="270" rx="22" fill="#F7FAFE" stroke="#2F5597" stroke-width="2"/>
+  <text x="1135" y="330" text-anchor="middle" class="body" font-weight="700">Active action 子循环</text>
+  <rect x="985" y="360" width="140" height="70" rx="14" fill="#fff" stroke="#667085" stroke-width="2"/><text x="1055" y="405" text-anchor="middle" class="small">rotate</text>
+  <rect x="1145" y="360" width="140" height="70" rx="14" fill="#fff" stroke="#667085" stroke-width="2"/><text x="1215" y="389" text-anchor="middle" class="small">small</text><text x="1215" y="420" text-anchor="middle" class="small">move</text>
+  <rect x="985" y="455" width="140" height="70" rx="14" fill="#fff" stroke="#667085" stroke-width="2"/><text x="1055" y="484" text-anchor="middle" class="small">viewpoint</text><text x="1055" y="515" text-anchor="middle" class="small">change</text>
+  <rect x="1145" y="455" width="140" height="70" rx="14" fill="#fff" stroke="#667085" stroke-width="2"/><text x="1215" y="484" text-anchor="middle" class="small">re-</text><text x="1215" y="515" text-anchor="middle" class="small">observe</text>
+  <path d="M1055 430V448" class="flow"/><path d="M1215 525C1215 545 1035 545 1035 530" class="flow"/>
+
+  <rect x="675" y="610" width="300" height="100" rx="28" class="state"/><text x="825" y="653" text-anchor="middle" class="stateText">CANDIDATE_</text><text x="825" y="689" text-anchor="middle" class="stateText">AVAILABLE</text>
+  <rect x="365" y="610" width="240" height="100" rx="28" class="state"/><text x="485" y="671" text-anchor="middle" class="stateText">VERIFYING</text>
+  <rect x="55" y="610" width="240" height="100" rx="50" class="good"/><text x="175" y="671" text-anchor="middle" class="stateText">RECOVERED</text>
+  <path d="M1145 220V278" class="flow"/><path d="M960 520C930 555 885 585 850 603" class="flow"/><path d="M675 660H612" class="flow"/><path d="M365 660H302" class="flow"/>
+  <path d="M175 610V520C175 470 120 470 120 420V230" class="flow"/><text x="205" y="520" class="small" fill="#0F6B6D">progressive re-entry</text>
+
+  <rect x="1320" y="290" width="240" height="360" rx="28" class="bad"/><text x="1440" y="340" text-anchor="middle" class="stateText" fill="#A61B1B">SAFE_FAIL</text><line x1="1350" y1="365" x2="1530" y2="365" stroke="#A61B1B" stroke-width="2"/>
+  <text x="1440" y="407" text-anchor="middle" class="small">timeout</text><text x="1440" y="449" text-anchor="middle" class="small">candidate</text><text x="1440" y="483" text-anchor="middle" class="small">exhausted</text><text x="1440" y="525" text-anchor="middle" class="small">repeated</text><text x="1440" y="559" text-anchor="middle" class="small">rejection</text><text x="1440" y="601" text-anchor="middle" class="small">false recovery</text><text x="1440" y="635" text-anchor="middle" class="small">prevented</text>
+  <path d="M1265 170C1340 180 1360 255 1320 330" class="fail"/><path d="M975 660C1150 680 1250 610 1312 500" class="fail"/><path d="M605 660C900 830 1180 800 1312 610" class="fail"/>
+  <rect x="380" y="770" width="700" height="82" rx="18" fill="#FFF8ED" stroke="#C46A00" stroke-width="3" stroke-dasharray="12 8"/>
+  <text x="730" y="821" text-anchor="middle" class="body" font-weight="700">候选出现 ≠ 恢复：必须通过验证与保持窗口后才允许交还</text>
+</svg>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="160mm" height="90mm" viewBox="0 0 1600 900">
+  <defs>
+    <marker id="ab" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2F5597"/></marker>
+    <marker id="ao" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#C46A00"/></marker>
+    <style>
+      text{font-family:"Microsoft YaHei","Noto Sans CJK SC","SimHei",sans-serif;fill:#1F2937}.title{font-size:40px;font-weight:700;fill:#17365D}.head{font-size:31px;font-weight:700}.body{font-size:30px}.small{font-size:29px}.source{fill:#F5F7FA;stroke:#667085;stroke-width:2}.gate{fill:#E9F2FF;stroke:#2F5597;stroke-width:3}.good{fill:#E7F5F3;stroke:#0F6B6D;stroke-width:3}.warn{fill:#FFF0D9;stroke:#C46A00;stroke-width:3}.bad{fill:#FCE8E6;stroke:#A61B1B;stroke-width:3}.flow{fill:none;stroke:#2F5597;stroke-width:4;marker-end:url(#ab)}.loop{fill:none;stroke:#C46A00;stroke-width:4;stroke-dasharray:12 8;marker-end:url(#ao)}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#fff"/><text x="800" y="58" text-anchor="middle" class="title">图4-1  模型1质量感知多源连续定位与渐进重接入流程</text>
+  <rect x="40" y="95" width="310" height="560" rx="20" fill="#FAFBFC" stroke="#98A2B3" stroke-width="2"/>
+  <text x="195" y="140" text-anchor="middle" class="head">多源观测与退化</text>
+  <g class="source"><rect x="70" y="170" width="250" height="76" rx="14"/><rect x="70" y="266" width="250" height="76" rx="14"/><rect x="70" y="362" width="250" height="76" rx="14"/><rect x="70" y="458" width="250" height="76" rx="14"/><rect x="70" y="554" width="250" height="76" rx="14" stroke-dasharray="10 7"/></g>
+  <text x="195" y="218" text-anchor="middle" class="body">BDS / GNSS / RTK</text><text x="195" y="314" text-anchor="middle" class="body">2D LiDAR</text><text x="195" y="410" text-anchor="middle" class="body">IMU + Wheel</text><text x="195" y="506" text-anchor="middle" class="body">ZED 2i</text><text x="195" y="602" text-anchor="middle" class="body">UWB（条件接入）</text>
+  <rect x="40" y="681" width="340" height="165" rx="18" fill="#FFF8ED" stroke="#C46A00" stroke-width="2"/>
+  <text x="210" y="719" text-anchor="middle" class="head" fill="#9A4E00">显式退化输入</text><text x="210" y="756" text-anchor="middle" class="small">BDS / GNSS degradation</text><text x="210" y="793" text-anchor="middle" class="small">LiDAR geometry</text><text x="210" y="830" text-anchor="middle" class="small">degradation</text>
+
+  <rect x="400" y="120" width="300" height="210" rx="20" class="gate"/><text x="550" y="160" text-anchor="middle" class="head">单源 health /</text><text x="550" y="197" text-anchor="middle" class="head">quality</text><text x="550" y="242" text-anchor="middle" class="body">时效 · 残差 · 几何</text><text x="550" y="282" text-anchor="middle" class="body">一致性 · 可见性</text><text x="550" y="316" text-anchor="middle" class="small">按源更新</text>
+  <rect x="400" y="365" width="300" height="290" rx="20" fill="#F7FAFE" stroke="#2F5597" stroke-width="3"/>
+  <text x="550" y="414" text-anchor="middle" class="head">质量门控动作</text>
+  <rect x="435" y="445" width="230" height="52" rx="12" class="good"/><text x="550" y="480" text-anchor="middle" class="body" font-weight="700">ACCEPT</text>
+  <rect x="435" y="517" width="230" height="52" rx="12" class="warn"/><text x="550" y="552" text-anchor="middle" class="body" font-weight="700">DOWNWEIGHT</text>
+  <rect x="435" y="589" width="230" height="52" rx="12" class="bad"/><text x="550" y="624" text-anchor="middle" class="body" font-weight="700">REJECT</text>
+
+  <rect x="760" y="120" width="340" height="210" rx="20" class="good"/><text x="930" y="168" text-anchor="middle" class="head">互补观测维持</text><text x="930" y="216" text-anchor="middle" class="body">IMU / Wheel / ZED</text><text x="930" y="260" text-anchor="middle" class="body">/ UWB（条件）</text><text x="930" y="304" text-anchor="middle" class="small">依据质量自适应贡献</text>
+  <rect x="760" y="365" width="340" height="290" rx="20" class="gate"/><text x="930" y="418" text-anchor="middle" class="head">连续融合状态</text><text x="930" y="473" text-anchor="middle" class="body">state x̂</text><text x="930" y="520" text-anchor="middle" class="body">covariance P</text><line x1="805" y1="548" x2="1055" y2="548" stroke="#2F5597" stroke-width="2"/><text x="930" y="592" text-anchor="middle" class="body">平面 + 高程联合维护</text><text x="930" y="632" text-anchor="middle" class="small">输出同时携带置信度</text>
+
+  <rect x="1160" y="120" width="390" height="210" rx="20" fill="#F6FBFA" stroke="#0F6B6D" stroke-width="3"/><text x="1355" y="170" text-anchor="middle" class="head">被动置信度判定</text><text x="1355" y="222" text-anchor="middle" class="body">充分 → 连续定位输出</text><text x="1355" y="270" text-anchor="middle" class="small">不足 → recovery request</text><text x="1355" y="309" text-anchor="middle" class="small">不把低质量观测强行融合</text>
+  <rect x="1160" y="365" width="390" height="290" rx="20" class="warn"/><text x="1355" y="416" text-anchor="middle" class="head">恢复与渐进重接入</text><text x="1355" y="470" text-anchor="middle" class="body">候选验证 / 一致性检查</text><text x="1355" y="520" text-anchor="middle" class="body">权重缓升 / 创新监测</text><text x="1355" y="570" text-anchor="middle" class="body">稳定后恢复正常贡献</text><text x="1355" y="620" text-anchor="middle" class="small">progressive re-entry</text>
+
+  <path d="M350 225H393" class="flow"/><path d="M700 225H753" class="flow"/><path d="M700 510H753" class="flow"/><path d="M1100 225H1153" class="flow"/><path d="M1100 510H1153" class="flow"/>
+  <path d="M1355 330V358" class="loop"/><path d="M1160 610C1105 715 760 755 700 585" class="loop"/>
+  <rect x="400" y="690" width="700" height="156" rx="18" fill="#F5F7FA" stroke="#667085" stroke-width="2" stroke-dasharray="10 7"/>
+  <text x="750" y="730" text-anchor="middle" class="head">边界声明</text><text x="750" y="776" text-anchor="middle" class="body">本图描述设计流程</text><text x="750" y="817" text-anchor="middle" class="body">平面 / 高程精度须由 EXP-01 正式验证</text>
+  <text x="1370" y="805" text-anchor="middle" class="small" fill="#667085">条件接入 ≠ 已部署</text>
+</svg>

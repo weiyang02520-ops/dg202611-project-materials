@@ -1,114 +1,26 @@
-# GitHub staging canonical map
+# GitHub canonical material map
 
-> 上一轮的65组SHA精确重复与8组版本族风险，加上构建期间新增的2组DSH v0.1/v0.2版本风险，共75组，均通过白名单复制、唯一版本选择或历史排除解决。原始材料未删除。
+This map records the current repository-facing canonical files. Local source paths, personal directories and excluded third-party bundles are intentionally omitted.
 
-## C01
+| Material role | Canonical repository path | Status |
+|---|---|---|
+| Official requirements | `OFFICIAL/` | Baseline reference |
+| Master charter | `PROJECT_GOVERNANCE/DG-202611_MASTER_CHARTER_v1.0.md` | Governance baseline |
+| Structure blueprint | `FORMAL_SUBMISSION_REBUILD/02_BLUEPRINT/07_DG-202611_正式提交方案书总体结构与写作蓝图_v1.0_FROZEN.md` | Frozen |
+| Visual specification | `FORMAL_SUBMISSION_REBUILD/02_BLUEPRINT/03_DG-202611_正式提交方案书视觉与排版规范_v1.0.md` | Current |
+| Integrated formal draft | `FORMAL_SUBMISSION_REBUILD/FULL_ASSEMBLY_STAGE_C/00_FORMAL_SUBMISSION_INTEGRATED_DRAFT_v0.3.1.md` | Current canonical text |
+| Final reference list | `FORMAL_SUBMISSION_REBUILD/FULL_ASSEMBLY_STAGE_C/02_FINAL_REFERENCE_LIST_v0.2.md` | Current canonical references |
+| Reference binding audit | `FORMAL_SUBMISSION_REBUILD/DOCUMENT_AUDIT_REFERENCE_BINDING/` | Current audit package |
+| Visual assembly plan | `FORMAL_SUBMISSION_REBUILD/VISUAL_ASSEMBLY_PREP/` | Current assembly package |
+| Seven formal design figures | `FORMAL_SUBMISSION_REBUILD/FORMAL_FIGURES_P1/` | SVG, PNG and specifications |
+| Gate records | `PROJECT_GOVERNANCE/121_*`, `123_*`, `130_*`, `137_*`, `153_*` | Selected decision trail |
+| Earlier Round 1 text | `FORMAL_SUBMISSION_REBUILD/05_DSH_OUTPUT/ROUND1/` | Historical; superseded |
+| External audit | `EXTERNAL_AUDIT/` | Audit evidence; not current submission text |
 
-MATERIAL_TYPE: 官方比赛文件
-CANONICAL_FILE: DG-202611中兵北斗卫星通信有限公司-基于具身智能的无人平台多源导航定位技术比赛方案 (1) (4).pdf
-SOURCE_ORIGINAL_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611中兵北斗卫星通信有限公司-基于具身智能的无人平台多源导航定位技术比赛方案 (1) (4).pdf`
-SOURCE_SHA256: `2d44997390a622f285c7699460c48dd0da9824b925996f47062510658bf68fb5`
-STAGING_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_GITHUB_STAGING\OFFICIAL\DG-202611中兵北斗卫星通信有限公司-基于具身智能的无人平台多源导航定位技术比赛方案 (1) (4).pdf`
-SUPERSEDED_FILES: 无
-REASON: 官方要求的唯一基准原文
+## Version rules
 
-## C02
-
-MATERIAL_TYPE: MASTER Charter
-CANONICAL_FILE: DG-202611_MASTER_CHARTER_v1.0.md
-SOURCE_ORIGINAL_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_FORMAL_SUBMISSION_REBUILD\00_MASTER_RULES\DG-202611_MASTER_CHARTER_v1.0.md`
-SOURCE_SHA256: `9a4798e8b58375daa5b7999b3db98117d59a043cbccc570a0a34b9bf50046d90`
-STAGING_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_GITHUB_STAGING\PROJECT_GOVERNANCE\DG-202611_MASTER_CHARTER_v1.0.md`
-SUPERSEDED_FILES: 其他任务/Gate文件不进入首轮staging
-REASON: 保留唯一总体治理基准
-
-## C03
-
-MATERIAL_TYPE: 九章FROZEN蓝图
-CANONICAL_FILE: 07_DG-202611_正式提交方案书总体结构与写作蓝图_v1.0_FROZEN.md
-SOURCE_ORIGINAL_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_FORMAL_SUBMISSION_REBUILD\02_BLUEPRINT\07_DG-202611_正式提交方案书总体结构与写作蓝图_v1.0_FROZEN.md`
-SOURCE_SHA256: `19af57b4c3c61f0eed26e7606ad0bbc47e583147970db98beabd734d450d1dd8`
-STAGING_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_GITHUB_STAGING\FORMAL_SUBMISSION_REBUILD\02_BLUEPRINT\07_DG-202611_正式提交方案书总体结构与写作蓝图_v1.0_FROZEN.md`
-SUPERSEDED_FILES: v1.0-CANDIDATE
-REASON: FROZEN版为当前结构基准
-
-## C04
-
-MATERIAL_TYPE: 高风险指标定义
-CANONICAL_FILE: 06_DG-202611_三项高风险指标文献与定义冻结稿_v1.0.md + 09_DG-202611_三项高风险指标冻结稿核验与勘误_v1.1.md
-SOURCE_ORIGINAL_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_FORMAL_SUBMISSION_REBUILD\03_LITERATURE_AND_CLAIMS\06_DG-202611_三项高风险指标文献与定义冻结稿_v1.0.md`
-SOURCE_SHA256: `291a4e90597b866f5abfc7a44066c6df3fef0e550102e6e128fc96a397ca1897`
-STAGING_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_GITHUB_STAGING\FORMAL_SUBMISSION_REBUILD\03_LITERATURE_AND_CLAIMS\06_DG-202611_三项高风险指标文献与定义冻结稿_v1.0.md`
-SUPERSEDED_FILES: 早期未勘误定义
-REASON: 冻结稿与勘误作为不可拆分的伴随文件
-
-## C05
-
-MATERIAL_TYPE: 正式事实来源台账
-CANONICAL_FILE: 10_DG-202611_正式方案书事实与证据来源台账_v1.0.md
-SOURCE_ORIGINAL_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_FORMAL_SUBMISSION_REBUILD\03_LITERATURE_AND_CLAIMS\10_DG-202611_正式方案书事实与证据来源台账_v1.0.md`
-SOURCE_SHA256: `b592e0fdd72e063e40b78efa5e13d1709806067bddb136f1c5c407fdbcdeb05c`
-STAGING_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_GITHUB_STAGING\FORMAL_SUBMISSION_REBUILD\03_LITERATURE_AND_CLAIMS\10_DG-202611_正式方案书事实与证据来源台账_v1.0.md`
-SUPERSEDED_FILES: 旧00证据矩阵
-REASON: 以正式来源台账控制正文事实
-
-## C06
-
-MATERIAL_TYPE: 正式参考文献Claim映射
-CANONICAL_FILE: 12_DG-202611_正式参考文献与关键Claim映射_v1.0.md
-SOURCE_ORIGINAL_PATH: `[LOCAL_USER_HOME]\Desktop\材料\12_DG-202611_正式参考文献与关键Claim映射_v1.0.md`
-SOURCE_SHA256: `4885343f0c6589db471d5b6a100cddae815fc71b10fdd3927f93e3141db1fb6e`
-STAGING_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_GITHUB_STAGING\FORMAL_SUBMISSION_REBUILD\03_LITERATURE_AND_CLAIMS\12_DG-202611_正式参考文献与关键Claim映射_v1.0.md`
-SUPERSEDED_FILES: Stage C/D/E过程表
-REASON: 只保留与正式方案直接相关的Claim映射；完整文献库使用外部仓库链接
-
-## C07
-
-MATERIAL_TYPE: DSH Round1
-CANONICAL_FILE: v0.2摘要 + v0.2第1章 + 自检 + 修订检查
-SOURCE_ORIGINAL_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_FORMAL_SUBMISSION_REBUILD\DSH_ROUND1\01_ABSTRACT_DRAFT_v0.2.md`
-SOURCE_SHA256: `0ae101466a99b49b6cd484f77fe2db7d7ee2358dd5aa665868674101c0ed6447`
-STAGING_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_GITHUB_STAGING\FORMAL_SUBMISSION_REBUILD\05_DSH_OUTPUT\ROUND1`
-SUPERSEDED_FILES: 01_ABSTRACT_DRAFT_v0.1.md; 02_CHAPTER_1_DRAFT_v0.1.md
-REASON: v0.2已通过MASTER复审并冻结于当前工作稿阶段；不是最终投稿冻结，也不是最终投稿canonical
-
-## C08
-
-MATERIAL_TYPE: v0.2/vCurrent历史定位
-CANONICAL_FILE: HISTORY/README.md
-SOURCE_ORIGINAL_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611比赛材料文档\PLAN_REVIEW_v0.2\DG-202611_方案书整体构造审阅版_v0.2.docx`
-SOURCE_SHA256: `04cd6aa04b43244b0f9ad14bba3af3df4d8bb47799f8f3efc5e6cdfef47a7d16`
-STAGING_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_GITHUB_STAGING\HISTORY\README.md`
-SUPERSEDED_FILES: DG-202611_方案书整体构造审阅版_v0.2.docx; DG-202611_方案书当前整稿预览_vCurrent.md; DG-202611_方案书当前整稿预览_vCurrent.docx
-REASON: 历史原件不复制，仅保存来源哈希和排除理由
-
-## C09
-
-MATERIAL_TYPE: 外部审计
-CANONICAL_FILE: 12_FINAL_INDEPENDENT_AUDIT_REPORT.md
-SOURCE_ORIGINAL_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_EXTERNAL_AUDIT\ROUND1_ZCODE\12_FINAL_INDEPENDENT_AUDIT_REPORT.md`
-SOURCE_SHA256: `4d0c893a6820c80d0523ff441eb03de94bb9e8b6cb1efc3f664742133f86b2f4`
-STAGING_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_GITHUB_STAGING\EXTERNAL_AUDIT\ROUND1_ZCODE\12_FINAL_INDEPENDENT_AUDIT_REPORT.md`
-SUPERSEDED_FILES: ROUND2_PACKAGE_A_CLAUDE及所有中间文件
-REASON: 仅复制已完成Round1最终报告；Round2仍在变化
-
-## C10
-
-MATERIAL_TYPE: 视觉与图表规范
-CANONICAL_FILE: 03_DG-202611_正式提交方案书视觉与排版规范_v1.0.md + 19_DG-202611_正式方案书图表体系与作图计划_v1.0.md
-SOURCE_ORIGINAL_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_FORMAL_SUBMISSION_REBUILD\02_BLUEPRINT\03_DG-202611_正式提交方案书视觉与排版规范_v1.0.md`
-SOURCE_SHA256: `172a2abd4ed90ef725f04a101a35258a077240627f3c26c01d88e7c0d10b2d8a`
-STAGING_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_GITHUB_STAGING\FORMAL_SUBMISSION_REBUILD\02_BLUEPRINT\03_DG-202611_正式提交方案书视觉与排版规范_v1.0.md`
-SUPERSEDED_FILES: 旧审阅渲染和第三方参考图
-REASON: 保留规范与计划，不复制未核验图片资产
-
-
-
-## C11
-
-MATERIAL_TYPE: Package A ROUND2独立审计
-CANONICAL_FILE: ROUND2_PACKAGE_A_CLAUDE目录8份最终审计文件
-SOURCE_ORIGINAL_PATH: `[LOCAL_USER_HOME]\Desktop\材料\DG-202611_EXTERNAL_AUDIT\ROUND2_PACKAGE_A_CLAUDE`
-STAGING_PATH: `EXTERNAL_AUDIT/ROUND2_PACKAGE_A_CLAUDE/`
-SUPERSEDED_FILES: 临时抓取、缓存、中间截图和未完成草稿均未复制
-REASON: ROUND2审计已完成；冻结判定仅为PASS_WITH_REQUIRED_BOOKKEEPING_FIXES，不能表述为已完成最终冻结，也不是比赛指标证据
+- Stage C `v0.3.1` supersedes `v0.3`.
+- Reference list `v0.2` supersedes `v0.1`.
+- The seven figures in `FORMAL_FIGURES_P1/` are canonical; `FIGURES/` is an index, not a duplicate asset store.
+- No Word/PDF final competition submission package is declared in this repository.
+- Experiment results remain placeholders until measured data and reproducible logs are available.
